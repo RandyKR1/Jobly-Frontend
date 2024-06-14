@@ -2,7 +2,6 @@
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
-  width: 100%;
 
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
@@ -14,9 +13,6 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-body #root{
-  width: 100%;
-}
 
 a {
   font-weight: 500;
@@ -30,25 +26,20 @@ a:hover {
 body {
   margin: 0;
   display: flex;
-  min-width: 100vw;
+  place-items: center;
+  min-width: 320px;
   min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+  /* background: url(https://i.gifer.com/Cat.gif);
+  background-size: cover;
+  background-position: center; */
+
 }
 
 h1 {
   font-size: 3.2em;
   line-height: 1.1;
-}
-
-nav{
-  text-align: center;
-  width: 100%;
-  padding: 10px;
-}
-
-nav a{
-  margin: 5px;
-  border: #535bf2 solid 2px;
-  padding: 8px;
 }
 
 button {

@@ -10,7 +10,7 @@ import Jobs from "./components/jobs/Job";
 import Profile from "./components/Profile";
 
 
-const Routing = ({comps}) => {
+const Routing = () => {
 
     
     return(
@@ -21,11 +21,11 @@ const Routing = ({comps}) => {
                 <Route path="/" element={<Home />} />
                 <Route path="/login" element={<Login />} />
                 <Route path="/signup" element={<SignUp />} />
-                <Route path="/companies" element={<Companies comps={comps}/>} />
-                <Route path="/company:name" element={<CompanyDetail comps={comps} />} />
-                <Route path="/jobs" element={<Jobs comps={comps}/>} />
-                <Route path="*" element={<Navigate to="/"/>} />
+                <Route path="/companies" element={<Companies />} />
+                <Route path="/company:name" element={<CompanyDetail />} />
+                <Route path="/jobs" element={<Jobs />} />
                 <Route path="/profile" element={<Profile />} />
+                <Route path="*" element={<Navigate to="/"/>} />
             </Routes>
         </BrowserRouter>
     </>
