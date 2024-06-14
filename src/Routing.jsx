@@ -7,6 +7,7 @@ import SignUp from "./components/SignUp";
 import Companies from "./components/companies/Companies";
 import CompanyDetail from "./components/companies/CompanyDetail";
 import Jobs from "./components/jobs/Job";
+import Profile from "./components/Profile";
 
 
 const Routing = ({comps}) => {
@@ -24,7 +25,7 @@ const Routing = ({comps}) => {
                 <Route path="/company:name" element={<CompanyDetail comps={comps} />} />
                 <Route path="/jobs" element={<Jobs comps={comps}/>} />
                 <Route path="*" element={<Navigate to="/"/>} />
-                {/* <Route path="/profile" element={<Profile />} /> */}
+                <Route path="/profile" element={<Profile />} />
             </Routes>
         </BrowserRouter>
     </>

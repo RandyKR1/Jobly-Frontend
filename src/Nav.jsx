@@ -8,13 +8,13 @@ import Home from "./components/Home";
 
 const Nav = () => {
     return(
-        <>
+        <nav>
+        <Link to="/home" element={<Home />}>Home</Link>
         <Link to="/login" element={<Login />}>Login</Link>
-        <Link to="/signup" element={<SignUp />}>SignUp</Link>
+        <Link to="/signup" element={<SignUp />}>Sign Up</Link>
         <Link to="/companies" element={<Companies />}>Companies</Link>
         <Link to="/jobs" element={<Jobs />}>Jobs</Link>
-        <Link to="/home" element={<Home />}>Home</Link>
-        </>
+        </nav>
     )
 }
 
