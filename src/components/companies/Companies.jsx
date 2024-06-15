@@ -4,6 +4,7 @@ import {Link} from "react-router-dom"
 import JoblyApi from "../../api";
 import SearchForm from "../forms/SearchForm";
 import LoadingSpinner from "../../LoadingSpinner";
+import Company from "./Company";
 
 
 const Companies = () => {
@@ -56,7 +57,16 @@ const Companies = () => {
             <ul>
                 {companies && companies.length > 0 ? (
                     companies.map(c => (
-                        <li key={c.handle}>Name: {c.name}</li>
+                        <li> 
+                            <Company 
+                                key={c.handle}
+                                handle={c.handle}
+                                name={c.name}
+                                description={c.description}
+                                logoUrl={c.logoUrl}
+                                numEmployees={c.numEmployees}
+                                /> 
+                        </li>
                     ))
                 ) : (
                     <p>No companies found.</p>
