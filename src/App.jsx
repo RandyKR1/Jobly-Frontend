@@ -4,7 +4,7 @@
 import React, {useState, useEffect} from 'react'
 import { BrowserRouter } from 'react-router-dom'
 import './App.css'
-import Routing from './Routing'
+import Routing from './routing/Routing'
 import JoblyApi from './api'
 import useLocalStorage from './hooks/LocalStorage'
 import {jwtDecode} from "jwt-decode"; 

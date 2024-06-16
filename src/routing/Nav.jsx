@@ -1,11 +1,11 @@
 import React, {useContext} from "react";
 import {Link} from "react-router-dom"
-import LoginForm from "./auth/LoginForm";
-import Companies from "./companies/Companies";
-import Jobs from "./jobs/Jobs";
-import Home from "./Home";
-import SignUpForm from "./auth/SignUpForm";
-import UserContext from "./auth/UserContext";
+import LoginForm from "../auth/LoginForm";
+import Companies from "../companies/Companies";
+import Jobs from "../jobs/Jobs";
+import Home from "../Home";
+import SignUpForm from "../auth/SignUpForm";
+import UserContext from "../auth/UserContext";
 
 
 
