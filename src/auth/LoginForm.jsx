@@ -1,10 +1,11 @@
 import React, {useState} from "react";
 import {useNavigate} from "react-router-dom"
+import Alert from "../common/Alert";
 
 const LoginForm = ({login}) => {
     const INITIAL_STATE = {
         username: '',
-        pasword: ''
+        password: ''
     }
 
     const [formData, setFormData] = useState(INITIAL_STATE)
@@ -50,7 +51,7 @@ const LoginForm = ({login}) => {
                 <br/>
                     <input 
                         onChange={handleChange}
-                        type="text"
+                        type="password"
                         name="password"
                         value={formData.password}
                         required='True' />

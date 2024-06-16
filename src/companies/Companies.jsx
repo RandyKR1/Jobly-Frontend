@@ -18,7 +18,6 @@ const Companies = () => {
         const fetchCompanies = async () => {
             try{
             let companies = await JoblyApi.getCompanies();
-            console.log('Fetched Companies:', companies)
             setCompanies(companies)
             } catch(e){
                 console.error("Error while fetching companies:", e)
