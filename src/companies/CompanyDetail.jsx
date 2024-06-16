@@ -1,8 +1,9 @@
 import React, {useEffect, useState} from "react";
 import Home from "../Home";
 import {Link, useParams} from "react-router-dom"
-import JoblyApi from "../../api";
-import LoadingSpinner from "../../LoadingSpinner";
+import JoblyApi from "../api";
+import LoadingSpinner from "../common/LoadingSpinner";
+import JobList from "../jobs/JobList";
 
 const CompanyDetail = () => {
     const {handle} = useParams()
@@ -26,6 +27,7 @@ const CompanyDetail = () => {
             <h2>{company.name}</h2>
             <br />
             <p>{company.description}</p>
+            <JobList jobs={company.jobs}/>
             
 
             <Link to="/" element={<Home/>}>Go Home</Link>

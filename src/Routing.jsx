@@ -1,16 +1,16 @@
 import React from "react";
 import {BrowserRouter, Routes, Route, Navigate} from "react-router-dom";
 import Nav from "./Nav"
-import Home from "./components/Home"
-import Login from "./components/Login";
-import SignUp from "./components/SignUp";
-import Companies from "./components/companies/Companies";
-import CompanyDetail from "./components/companies/CompanyDetail";
-import Jobs from "./components/jobs/Job";
-import Profile from "./components/Profile";
+import Home from "./Home"
+import LoginForm from "./auth/LoginForm";
+import CompanyDetail from "./companies/CompanyDetail";
+import Jobs from "./jobs/Jobs";
+import Profile from "./profile/Profile";
+import SignUpForm from "./auth/SignUpForm";
+import Companies from "./companies/Companies";
 
 
-const Routing = () => {
+const Routing = ({signup}) => {
 
     
     return(
@@ -19,8 +19,8 @@ const Routing = () => {
             <Nav />
             <Routes>
                 <Route path="/" element={<Home />} />
-                <Route path="/login" element={<Login />} />
-                <Route path="/signup" element={<SignUp />} />
+                <Route path="/login" element={<LoginForm />} />
+                <Route path="/signup" element={<SignUpForm signup={signup}/>} />
                 <Route path="/companies" element={<Companies />} />
                 <Route path="/companies/:handle" element={<CompanyDetail />} />
                 <Route path="/jobs" element={<Jobs />} />

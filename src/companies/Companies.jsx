@@ -1,9 +1,9 @@
 import React, {useState, useEffect} from "react";
 import Home from "../Home";
 import {Link} from "react-router-dom"
-import JoblyApi from "../../api";
-import SearchForm from "../forms/SearchForm";
-import LoadingSpinner from "../../LoadingSpinner";
+import JoblyApi from "../api";
+import SearchForm from "../common/SearchForm";
+import LoadingSpinner from "../common/LoadingSpinner";
 import Company from "./Company";
 
 
@@ -57,9 +57,8 @@ const Companies = () => {
             <ul>
                 {companies && companies.length > 0 ? (
                     companies.map(c => (
-                        <li> 
+                        <li key={c.handle}> 
                             <Company 
-                                key={c.handle}
                                 handle={c.handle}
                                 name={c.name}
                                 description={c.description}
