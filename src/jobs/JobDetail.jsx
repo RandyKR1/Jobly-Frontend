@@ -6,14 +6,12 @@ const Job = ({ title, companyName, salary, equity }) => {
     const formattedEquity = equity ? `${equity * 100}%` : "No equity";
 
     return (
-        <div className="JobCard card">
-            <div className="card-body">
+            <div className="card">
                 <h6 className="card-title">{title}</h6>
                 <p>{companyName}</p>
                 {salary && <div><small>Salary: {formattedSalary}</small></div>}
                 {equity !== undefined && <div><small>Equity: {formattedEquity}</small></div>}
             </div>
-        </div>
     );
 };
 

@@ -44,14 +44,20 @@ const Jobs = () => {
     if (loading) return <LoadingSpinner />
 
     return (
-        <div className="JobList col-md-8 offset-md-2">
-                  <h1>This is the Jobs page</h1>
-          <SearchForm searchFor={search} />
-          {jobs.length
-              ? <JobList jobs={jobs} />
-              : <p className="lead">Sorry, no results were found!</p>
-          }
-        </div>
+        <div className="card-container">
+            <div className="card-title-search-container">
+                    <div className="card-title">
+                        <h1>Jobs</h1>
+                    </div>
+                    <div className="search">
+                        <SearchForm searchData={search} />
+                    </div>
+                </div>
+                        {jobs.length
+                            ? <JobList jobs={jobs} />
+                            : <p className="card">Sorry, no results were found!</p>
+                        }
+                </div>
     );
 }
 

@@ -1,17 +1,16 @@
 import React from "react";
+import "./Alert.css"
 
-const Alert = ({messages = []}) => {
-
+const Alert = ({ messages = [] }) => {
     return (
-        <div>
-          {messages.map(error => (
-              <p key={error}>
-                {error}
-              </p>
-          ))}
+        <div className="alert-container">
+            {messages.map((error, index) => (
+                <p key={index} className="alert-message">
+                    {error}
+                </p>
+            ))}
         </div>
     );
-}
-
+};
 
 export default Alert;
