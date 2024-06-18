@@ -21,9 +21,7 @@ const SearchForm = ({ searchData }) => {
     return (
         <div className="form">
             <form onSubmit={handleSubmit}>
-                <label htmlFor="name">
-                    <i className="fa-solid fa-magnifying-glass"></i>
-                </label>
+                <label htmlFor="name"/>
                 <input 
                     type="text" 
                     name="name" 

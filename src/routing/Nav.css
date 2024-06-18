@@ -1,7 +1,6 @@
 nav {
-    background-color: rgb(20, 28, 69, 0.85);
-    box-shadow: 0px 7px 30px 11px #151d45;
-    border-bottom: solid 2px #141d45;
+    background-color: rgb(255 255 255 / 40%);
+    /* box-shadow: 1px -4px 20px 20px #ffffffa3; */
     text-decoration: none;
     box-sizing: border-box;
     padding: 30px;
@@ -11,16 +10,35 @@ nav {
     align-items: center;
     width: 100%;
     min-height: 12%;
+    z-index: 1;
   }
-  
   .nav-links {
     align-items: center;
     display: flex;
   }
   
   nav a {
+    font-weight: 600;
+    font-family: 'FontAwesome';
+    text-shadow: -4px 0px 4px black;
     color: #f0f2f5;
     text-decoration: none;
     text-align: center;
-    font-size: 1.5em;
+    font-size: 1.35em;
+    margin: 0 2%;
+    letter-spacing: 5px;
+  }
+
+  ul{
+    width: 100%;
+  }
+
+  .nav-logout {
+    font-weight: 800;
+    font-family: 'FontAwesome';
+    margin-left: auto;
+    min-width: 10%;
+    text-align: right;
+    text-shadow: -3px 0px 0px black;
+    letter-spacing: 5px;
   }

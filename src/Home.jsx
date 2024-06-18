@@ -15,8 +15,12 @@ const Home = () => {
             <>
             <div className="home-card-container">
             <div className="home-card">
-                    <h1>Jobly</h1>
-                    <p>Welcome, {currentUser.firstName}</p>
+                <h1 className="home-h1">
+                    Jobly
+                </h1>
+                    <div className="home-card-body">
+                        <p>Welcome, {currentUser.firstName}</p>
+                    </div>
                 </div>
             </div>
             </>
@@ -25,10 +29,15 @@ const Home = () => {
 
     const loggedOutHome = () => {
         return(
-            <>
+            <> 
             <div className="home-card-container">
                 <div className="home-card">
-                    <h1>Jobly</h1>
+                <h1 className="home-h1">
+                    Jobly
+                </h1>
+                <div className="home-card-body">
+                    All the jobs in one, convenient place.
+                </div>
                     <div className="home-btn-container">
                     <Link to="/login" element={<LoginForm />}>
                         <button className="home-btn">

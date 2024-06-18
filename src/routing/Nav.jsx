@@ -14,20 +14,23 @@ const Nav = ({logout}) => {
 
     const loggedInNav = () => {
         return(
+            <>
             <ul>
                 <Link to="/home" element={<Home />}>Home</Link>
                 <Link to="/companies" element={<Companies />}>Companies</Link>
                 <Link to="/jobs" element={<Jobs />}>Jobs</Link>
-                <Link to="/" onClick={logout}>Log Out</Link>
             </ul>
+                <div className="nav-logout">
+                    <Link to="/" onClick={logout}>Log Out</Link>
+                </div>
+            </>
         )
     }
 
     const loggedOutNav =() => {
         return(
-            <ul>
-                <Link to="/"> Jobly </Link>
-            </ul>
+            <>
+            </>
         )
     }
 

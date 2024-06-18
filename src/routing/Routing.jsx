@@ -16,7 +16,7 @@ const Routing = ({signup, login, logout}) => {
     return(
     <>
         <Nav logout={logout}/>
-            <Routes>
+            <Routes className="wrapper">
                 <Route path="/" element={<Home />} />
                 <Route path="/login" element={<LoginForm login={login}/>} />
                 <Route path="/signup" element={<SignUpForm signup={signup}/>} />
