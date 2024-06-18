@@ -5,8 +5,8 @@ const Company = ({handle, name, description, numEmployees, logoUrl}) => {
 
     return (
       
-        <div className="card">
-            <Link className="CompanyCard card" to={`/companies/${handle}`}>
+        <>
+            <Link className="card-body" to={`/companies/${handle}`}>
                   {name}
                   {logoUrl && <img src={logoUrl}
                                    alt={name}
@@ -15,7 +15,7 @@ const Company = ({handle, name, description, numEmployees, logoUrl}) => {
                 <p><small>{description}</small></p>
                 <p>Employee Count: {numEmployees} </p>
             </Link>
-          </div>
+          </>
      
     );
 }

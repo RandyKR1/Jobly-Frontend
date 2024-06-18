@@ -22,8 +22,6 @@ const JobList = ({ jobs }) => {
                             <p>No jobs found.</p>
                         )}
                     </ul>
-                    <Link to="/">Go Home</Link>
-                
         </>
     );
 };

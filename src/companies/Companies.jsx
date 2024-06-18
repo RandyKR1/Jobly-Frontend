@@ -59,9 +59,13 @@ const Companies = () => {
             </div>
             <div className="card-list">
                 <ul>
+                    
                     {companies.length > 0 ? (
                         companies.map(c => (
-                            <li key={c.handle}>
+                      
+                            <li
+                                className="card"
+                                key={c.handle}>
                                 <Company
                                     handle={c.handle}
                                     name={c.name}
@@ -74,9 +78,9 @@ const Companies = () => {
                     ) : (
                         <p>No companies found.</p>
                     )}
+                   
                 </ul>
             </div>
-            <Link to="/" element={<Home />}>Go Home</Link>
         </div>
     );
 };

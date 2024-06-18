@@ -8,9 +8,11 @@ const Job = ({ title, companyName, salary, equity }) => {
     return (
             <div className="card">
                 <h6 className="card-title">{title}</h6>
-                <p>{companyName}</p>
-                {salary && <div><small>Salary: {formattedSalary}</small></div>}
-                {equity !== undefined && <div><small>Equity: {formattedEquity}</small></div>}
+                <p className="jobs-comp-name">Company: {companyName}</p>
+                <div className="card-body">
+                    {salary && <div><small>Salary: {formattedSalary}</small></div>}
+                    {equity !== undefined && <div><small>Equity: {formattedEquity}</small></div>}
+                </div>
             </div>
     );
 };

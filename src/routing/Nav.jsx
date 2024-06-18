@@ -1,10 +1,8 @@
 import React, {useContext} from "react";
 import {Link} from "react-router-dom"
-import LoginForm from "../auth/LoginForm";
 import Companies from "../companies/Companies";
 import Jobs from "../jobs/Jobs";
 import Home from "../Home";
-import SignUpForm from "../auth/SignUpForm";
 import UserContext from "../auth/UserContext";
 import "./Nav.css"
 
@@ -29,8 +27,6 @@ const Nav = ({logout}) => {
         return(
             <ul>
                 <Link to="/"> Jobly </Link>
-                <Link to="/login" element={<LoginForm />}>Login</Link>
-                <Link to="/signup" element={<SignUpForm />}>Sign Up</Link>
             </ul>
         )
     }
