@@ -51,7 +51,7 @@ const Companies = () => {
         <div className="card-container">
             <div className="card-title-search-container">
                 <div className="card-title">
-                    <h1>This is the Companies page</h1>
+                    <h1>Search by Company</h1>
                 </div>
                 <div className="search">
                     <SearchForm searchData={search} />
