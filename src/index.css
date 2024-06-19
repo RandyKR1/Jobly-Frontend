@@ -236,6 +236,7 @@ body {
 
 .search-form {
   display:flex;
+  margin-bottom: 5px;
 }
 
 .search-form label{
