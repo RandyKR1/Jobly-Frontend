@@ -46,9 +46,6 @@ const Jobs = () => {
     return (
         <div className="card-container">
             <div className="card-title-search-container">
-                    <div className="card-title">
-                        <h1>Jobs</h1>
-                    </div>
                     <div className="search">
                         <SearchForm searchData={search} />
                     </div>

@@ -19,8 +19,10 @@ const SearchForm = ({ searchData }) => {
     };
 
     return (
-        <div className="form">
-            <form onSubmit={handleSubmit}>
+        <div>
+            <form 
+                className="search-form"
+                onSubmit={handleSubmit}>
                 <label htmlFor="name"/>
                 <input 
                     type="text" 
@@ -28,6 +30,7 @@ const SearchForm = ({ searchData }) => {
                     id="name"
                     value={formData}
                     onChange={handleChange} 
+                    placeholder="Enter Search Term Here"
                 />
                 <button type="submit">Submit</button>
                 <button type="button" onClick={resetList}>Reset</button>

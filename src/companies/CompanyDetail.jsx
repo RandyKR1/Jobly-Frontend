@@ -23,17 +23,18 @@ const CompanyDetail = () => {
     return (
         <>
             <div className="card-container">
-                <div className="card">
-                    <h1>This is the Company Detail page</h1>
-                        <br />
-                    <h2>{company.name}</h2>
-                        <br />
-                    <p>{company.description}</p>
-                    <div className="card-list">
-                        <JobList jobs={company.jobs}/>
+                <div className="comp-card">
+                        <div className="card-title">
+                            <h2>{company.name}</h2>
+                        </div>
+                        <div className="card-body">
+                            <h4>{company.description}</h4>
+                        </div>  
+                        <div className="list-wrapper">
+                            <JobList jobs={company.jobs}/>
+                        </div>
                     </div>
                 </div>
-            </div>
         </>
     )
 }

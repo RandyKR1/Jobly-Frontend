@@ -20,19 +20,23 @@ const Job = ({ id, title, companyName, salary, equity }) => {
       }
 
     return (
-            <div className="card">
-                <h6 className="card-title">{title}</h6>
-                <p className="jobs-comp-name">Company: {companyName}</p>
-                <div className="card-body">
-                    {salary && <div><small>Salary: {formattedSalary}</small></div>}
-                    {equity !== undefined && <div><small>Equity: {formattedEquity}</small></div>}
-                </div>
-                <button className="apply-btn"
+            <div>
+                <h3 className="card-title">{title}</h3>
+                <h3 className="jobs-comp-name"><i>{companyName}</i></h3>
+
+                <span className="card-body-apply-wrapper">
+                    <div className="card-body">
+                        {salary && <div><small>Salary: {formattedSalary}</small></div>}
+                        {equity !== undefined && <div><small>Equity: {formattedEquity}</small></div>}
+                    </div>
+                    <button className="apply-btn"
                         onClick={handleApply}
                         disabled={applied}>       
-                {applied ? "Applied" : "Apply"}
-                </button>
+                    {applied ? "Applied" : "Apply"}
+                    </button>
+                </span>
             </div>
+            
     );
 };
 

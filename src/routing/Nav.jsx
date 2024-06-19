@@ -4,6 +4,8 @@ import Companies from "../companies/Companies";
 import Jobs from "../jobs/Jobs";
 import Home from "../Home";
 import UserContext from "../auth/UserContext";
+import LoginForm from "../auth/LoginForm";
+import SignUpForm from "../auth/SignUpForm";
 import "./Nav.css"
 
 
@@ -16,7 +18,7 @@ const Nav = ({logout}) => {
         return(
             <>
             <ul>
-                <Link to="/home" element={<Home />}>Home</Link>
+                <Link to="/home" element={<Home />}>Jobly</Link>
                 <Link to="/companies" element={<Companies />}>Companies</Link>
                 <Link to="/jobs" element={<Jobs />}>Jobs</Link>
             </ul>
@@ -30,6 +32,11 @@ const Nav = ({logout}) => {
     const loggedOutNav =() => {
         return(
             <>
+             <ul>
+             <Link to="/home" element={<Home />}>Jobly</Link>
+             <Link to="/login" element={<LoginForm />}>Login</Link>
+             <Link to="/signup" element={<SignUpForm />}>Sign Up</Link>
+            </ul>
             </>
         )
     }

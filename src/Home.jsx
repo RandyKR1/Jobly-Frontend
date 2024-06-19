@@ -38,7 +38,7 @@ const Home = () => {
                 <div className="home-card-body">
                     All the jobs in one, convenient place.
                 </div>
-                    <div className="home-btn-container">
+                    {/* <div className="home-btn-container">
                     <Link to="/login" element={<LoginForm />}>
                         <button className="home-btn">
                             Login
@@ -49,7 +49,7 @@ const Home = () => {
                             Sign Up
                         </button>
                     </Link>
-                    </div>
+                    </div> */}
                 </div>
             </div>
             </>

@@ -7,13 +7,10 @@ const Company = ({handle, name, description, numEmployees, logoUrl}) => {
       
         <>
             <Link className="card-body" to={`/companies/${handle}`}>
-                  {name}
-                  {logoUrl && <img src={logoUrl}
-                                   alt={name}
-                                   className="float-right ml-5" />}
-                
-                <p><small>{description}</small></p>
-                <p>Employee Count: {numEmployees} </p>
+                <h3>{name}</h3><small>Employee Count: {numEmployees}</small>  
+                <div className="card-text">  
+                    <p>{description}</p>
+                </div>
             </Link>
           </>
      

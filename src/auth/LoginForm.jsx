@@ -32,7 +32,10 @@ const LoginForm = ({login}) => {
 
     return(
         <div className="card-container">
-            <div className="card">
+            <div className="auth-card">
+            <div className="auth-card-title">
+                <h2>Log In</h2>
+                </div>
             <form 
                 onSubmit={handleSubmit}
                 className="auth-form">
@@ -60,7 +63,7 @@ const LoginForm = ({login}) => {
 
                 {formErrors.length ? <Alert messages={formErrors} /> : null}
 
-                <button>Submit</button>
+                <button className="auth-btn">Submit</button>
             </form>
             </div>
         </div>

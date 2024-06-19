@@ -5,10 +5,12 @@ import { Link } from "react-router-dom";
 const JobList = ({ jobs }) => {
     return (
         <>
-                    <ul className="card-list">
+                <div className="card-list">
+                    <ul className="results-ul">
                         {jobs && jobs.length > 0 ? (
                             jobs.map(j => (
-                                <li key={j.id}>
+                                <li key={j.id}
+                                    className="card">
                                     <JobDetail
                                         id={j.id}
                                         title={j.title}
@@ -22,6 +24,7 @@ const JobList = ({ jobs }) => {
                             <p>No jobs found.</p>
                         )}
                     </ul>
+                </div>
         </>
     );
 };

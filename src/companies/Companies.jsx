@@ -49,14 +49,11 @@ const Companies = () => {
 
     return (
         <div className="card-container">
-            <div className="card-title-search-container">
-                <div className="card-title">
-                    <h1>Search by Company</h1>
-                </div>
+            
                 <div className="search">
                     <SearchForm searchData={search} />
                 </div>
-            </div>
+        
             <div className="card-list">
                 <ul className="results-ul">
                     
@@ -70,7 +67,6 @@ const Companies = () => {
                                     handle={c.handle}
                                     name={c.name}
                                     description={c.description}
-                                    logoUrl={c.logoUrl}
                                     numEmployees={c.numEmployees}
                                 />
                             </li>
