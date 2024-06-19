@@ -58,7 +58,7 @@ const Companies = () => {
                 </div>
             </div>
             <div className="card-list">
-                <ul>
+                <ul className="results-ul">
                     
                     {companies.length > 0 ? (
                         companies.map(c => (

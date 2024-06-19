@@ -35,7 +35,7 @@ const LoginForm = ({login}) => {
             <div className="card">
             <form 
                 onSubmit={handleSubmit}
-                className="signup-form">
+                className="auth-form">
                
                 <div className="input-container">
                     <label htmlFor="username">Username</label>
