@@ -307,3 +307,50 @@ button:focus-visible {
 }
 
 
+@media (max-width: 768px) {
+  /* Adjustments for .auth-card */
+  .auth-card {
+    width: 95%; /* Adjust card width for smaller screens */
+    max-width: 100%;
+  }
+
+  .auth-btn {
+    width: 30%; /* Adjust button width for smaller screens */
+    font-size: 0.9em; /* Adjust font size for smaller screens */
+  }
+
+  /* Adjustments for .home-card */
+  .home-card {
+    width: 95%; /* Example of adjusting width for smaller screens */
+    max-width: 100%;
+    margin-top: 1em; /* Example of additional margin adjustment */
+  }
+
+  .home-btn-container {
+    width: 80%; /* Example of adjusting container width for smaller screens */
+  }
+
+  .home-btn {
+    width: 40%; /* Example of adjusting button width for smaller screens */
+    font-size: 0.9em; /* Example of adjusting font size for smaller screens */
+  }
+
+  .home-h1 {
+    font-size: 4em; /* Example of adjusting font size for smaller screens */
+  }
+
+  /* Adjustments for .card styles */
+  .card {
+    width: 95%; /* Example of adjusting card width for smaller screens */
+    max-width: 100%;
+    margin: 1em auto; /* Example of adjusting margin for smaller screens */
+  }
+
+  .card-body {
+    font-size: 0.9em; /* Example of adjusting font size for smaller screens */
+  }
+
+  .jobs-comp-name {
+    font-size: 0.9em; /* Example of adjusting font size for smaller screens */
+  }
+}
