@@ -69,6 +69,7 @@ body {
   cursor: pointer;
   transition: border-color 0.25s;
   margin: 10px;
+  touch-action: manipulation;
 }
 
 .card-container{
@@ -318,6 +319,7 @@ button:focus-visible {
   .auth-btn {
     width: 30%; /* Adjust button width for smaller screens */
     font-size: 0.9em; /* Adjust font size for smaller screens */
+    touch-action: manipulation;
   }
 
   /* Adjustments for .home-card */

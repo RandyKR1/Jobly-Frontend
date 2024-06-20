@@ -63,7 +63,8 @@ const LoginForm = ({login}) => {
 
                 {formErrors.length ? <Alert messages={formErrors} /> : null}
 
-                <button className="auth-btn">Submit</button>
+                <button type="submit" className="auth-btn">Submit</button>
+
             </form>
             </div>
         </div>
