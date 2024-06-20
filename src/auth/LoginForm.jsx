@@ -25,6 +25,7 @@ const LoginForm = ({login}) => {
         let res = await login(formData)
         if(res.success){
             navigate("/companies");
+            alert("submitted")
         }else {
             setFormErrors(res.errors);
           }
