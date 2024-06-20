@@ -70,6 +70,7 @@ body {
   transition: border-color 0.25s;
   margin: 10px;
   touch-action: manipulation;
+  z-index:  2;
 }
 
 .card-container{
@@ -320,6 +321,7 @@ button:focus-visible {
     width: 30%; /* Adjust button width for smaller screens */
     font-size: 0.9em; /* Adjust font size for smaller screens */
     touch-action: manipulation;
+    z-index: 2;
   }
 
   /* Adjustments for .home-card */
