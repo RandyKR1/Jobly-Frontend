@@ -25,7 +25,6 @@ const LoginForm = ({login}) => {
         let res = await login(formData)
         if(res.success){
             navigate("/companies");
-            alert("submitted")
         }else {
             setFormErrors(res.errors);
           }
@@ -64,8 +63,7 @@ const LoginForm = ({login}) => {
 
                 {formErrors.length ? <Alert messages={formErrors} /> : null}
 
-                <button type="submit" className="auth-btn">Submit</button>
-
+                <button className="auth-btn">Submit</button>
             </form>
             </div>
         </div>
