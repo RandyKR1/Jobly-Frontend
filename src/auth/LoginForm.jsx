@@ -38,6 +38,7 @@ const LoginForm = ({login}) => {
                 <h2>Log In</h2>
                 </div>
             <form 
+                onSubmit={handleSubmit}
                 className="auth-form">
                
                 <div className="input-container">
@@ -62,10 +63,8 @@ const LoginForm = ({login}) => {
                 </div>
 
                 {formErrors.length ? <Alert messages={formErrors} /> : null}
-                <button 
-                    type="submit" 
-                    className="auth-btn"
-                    onMouseDown={handleSubmit}>Submit</button>
+
+                <button type="submit" className="auth-btn">Submit</button>
 
             </form>
             </div>
